@@ -86,6 +86,8 @@ export const logout = async (req, res, next) => {
       message: "Logout successful",
     });
   } catch (error) {
+    console.log(error);
+    
     next(error);
   }
 };
